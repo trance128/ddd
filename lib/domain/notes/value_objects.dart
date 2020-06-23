@@ -23,22 +23,22 @@ class NoteBody extends ValueObject<String> {
   const NoteBody._(this.value);
 }
 
-class ToDoName extends ValueObject<String> {
+class TodoName extends ValueObject<String> {
   @override
   final Either<ValueFailure<String>, String> value;
 
   static const maxLength = 30;
 
-  factory ToDoName(String input) {
+  factory TodoName(String input) {
     assert(input != null);
-    return ToDoName._(
+    return TodoName._(
       validateMaxStringLength(input, maxLength)
           .flatMap(validateStringNotEmpty)
           .flatMap(validateSingleLine),
     );
   }
 
-  const ToDoName._(this.value);
+  const TodoName._(this.value);
 }
 
 class NoteColor extends ValueObject<Color> {
