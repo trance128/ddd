@@ -23,7 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  dartz: ^0.9.0 
+  dartz: ^0.9.1
   freezed_annotation: ^0.7.1
   flutter_bloc: ^4.0.1
   

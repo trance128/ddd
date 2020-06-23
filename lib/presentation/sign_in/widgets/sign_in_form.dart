@@ -33,6 +33,7 @@ class SignInForm extends StatelessWidget {
         return Form(
           autovalidate: state.showErrorMessages,
           child: ListView(
+            padding: const EdgeInsets.all(8),
             children: [
               const Text(
                 '🗒️',
@@ -126,6 +127,10 @@ class SignInForm extends StatelessWidget {
                   ),
                 ),
               ),
+              if (state.isSubmitting) ...[
+                const SizedBox(height: 8),
+                const LinearProgressIndicator(),
+              ]
             ],
           ),
         );
