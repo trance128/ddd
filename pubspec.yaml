@@ -39,6 +39,7 @@ dependencies:
   kt_dart: ^0.7.0+1
   json_annotation: ^3.0.1
   cloud_firestore: ^0.13.7
+  rxdart: ^0.24.1
 
 dev_dependencies:
   flutter_test:
